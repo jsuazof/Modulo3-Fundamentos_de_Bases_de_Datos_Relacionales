@@ -80,7 +80,7 @@ usuario específico */
 
 SELECT *
 FROM Transaccion
-WHERE envia_usuario_id = 1 OR recibe_usuario_id = 1;
+WHERE envia_usuario_id = 1;
 
 /* 4.- Sentencia DML para modificar el campo correo electrónico de un
 usuario específico */
