@@ -1,6 +1,5 @@
 package JavaExercises;
 
-import java.util.Scanner;
 
 public class Persona {
 
@@ -13,7 +12,7 @@ public class Persona {
     public float IMC() {
         float imc;
         imc = (float) (peso / Math.pow(altura, 2));
-        System.out.println("El IMC es: " + imc);
+        // System.out.println("El IMC es: " + imc);
         return imc;
     }
 
@@ -48,21 +47,9 @@ public class Persona {
             System.out.println("OBESO: Tipo 3");
         }
     }
+    //Constructores
 
-    public void menu()
-    {
-        Persona persona = new Persona();
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese el RUT");
-        persona.rut = leer.nextLine();
-        System.out.println("Ingrese el nombre");
-        persona.nombre = leer.nextLine();
-        System.out.println("Ingrese la edad");
-        persona.edad = leer.nextShort();
-        System.out.println("Ingrese la altura");
-        persona.altura = leer.nextFloat();
-        System.out.println("Ingrese el peso");
-        persona.peso = leer.nextFloat();
-        leer.close();
+    public Persona() {
     }
+ 
 }
